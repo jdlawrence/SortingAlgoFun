@@ -1,0 +1,32 @@
+{
+  "name": "sorting-algs",
+  "version": "1.0.0",
+  "description": "Practice with basic sorting algorithms",
+  "main": "bubbleSort.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdlawrence/SortingAlgoFun.git"
+  },
+  "keywords": [
+    "sorting"
+  ],
+  "author": "Jamil D Lawrence",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdlawrence/SortingAlgoFun/issues"
+  },
+  "homepage": "https://github.com/jdlawrence/SortingAlgoFun#readme",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-standard": "^7.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.0",
+    "eslint-plugin-standard": "^2.1.1"
+  }
+}
