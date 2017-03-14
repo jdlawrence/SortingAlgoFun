@@ -28,11 +28,6 @@ function merge(left, right) {
   return result;
 }
 
-var left = [7];
-var right = [3];
-
-console.log(merge(left, right));
-
 module.exports = {
   merge: merge,
   swap: swap
