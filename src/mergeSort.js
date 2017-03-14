@@ -5,7 +5,8 @@ function mergeSort(arr, lo, hi) {
   lo = lo === undefined ? 0 : lo;
   hi = hi === undefined ? arr.length - 1 : hi;
 
-  // Base case: lo and hi indices are the same
+  // Base case: if lo and hi indices are the same
+  // slice off the element at the index
   if (lo >= hi) {
     return arr.slice(lo, lo + 1);
   }
