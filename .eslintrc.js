@@ -14,6 +14,9 @@ module.exports = {
         "no-console": 0,
         "no-param-reassign": 0,
         "no-plusplus": 0,
+        "comma-dangle": 0,
+        "object-shorthand": 0,
+        "consistent-return": 0,
         "no-use-before-define": 0,
         "react/jsx-sort-prop-types": 0
     }
