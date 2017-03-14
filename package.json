@@ -4,7 +4,7 @@
   "description": "Practice with basic sorting algorithms",
   "main": "bubbleSort.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/jdlawrence/SortingAlgoFun#readme",
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "chai": "^3.5.0",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-config-standard": "^7.0.1",
@@ -27,6 +29,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.0",
-    "eslint-plugin-standard": "^2.1.1"
+    "eslint-plugin-standard": "^2.1.1",
+    "mocha": "^3.2.0"
   }
 }
