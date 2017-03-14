@@ -21,4 +21,8 @@ function mergeSort(arr, lo, hi) {
   return result;
 }
 
+module.exports = mergeSort;
+
+
+
 
