@@ -1,17 +1,18 @@
+/***************** FIXXXXXX ***************/
 var swap = require('./helpers').swap;
 
 function bubbleSort(arr) {
   // Make a copy of the original array
   var result = arr.slice();
-  // Variable to hold the largest value so far
 
   // Iterate through every element
   for (var i = 0; i < result.length; i++) {
-    // for every element, check if there's a smaller element in the rest of the array
-    // if so, swap that small element with the current one
-    for (var j = i + 1; j < result.length; j++) {
-      if (result[j] < result[i]) {
-        swap(result, i, j);
+    // At every position, check if the next element is larger than the current.
+    // If so, swap
+    // After every iteration, the largest element will be at the end of array
+    for (var j = 0; j < result.length - 1 - i; j++) {
+      if (result[j] > result[j + 1]) {
+        swap(result, j, j + 1);
       }
     }
   }
