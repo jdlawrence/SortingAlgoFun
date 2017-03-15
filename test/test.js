@@ -2,12 +2,21 @@ var assert = require('assert');
 var expect = require('chai').expect;
 var bubbleSort = require('../src/bubbleSort');
 var mergeSort = require('../src/mergeSort');
+var swap = require('../src/helpers').swap;
 var merge = require('../src/helpers').merge;
 
 describe('BubbleSort', function () {
-  it('Sorts an array in ascending order', () => {
-    var sorted = bubbleSort([5, 3, 1, -6, 7]);
-    expect(sorted).to.eql([-6, 1, 3, 5, 7]);
+  describe('The swap helper function', () => {
+    it('Returns a new array with values swapped at the inputted indices', () => {
+      var swapped = swap([1, 2, 3, 4, 5, 6], 2, 5);
+      expect(swapped).to.eql([1, 2, 6, 4, 5, 3]);
+    });
+  });
+  describe('The bubbleSort function itself', () => {
+    it('Sorts an array in ascending order', () => {
+      var sorted = bubbleSort([5, 3, 1, -6, 7]);
+      expect(sorted).to.eql([-6, 1, 3, 5, 7]);
+    });
   });
 });
 
