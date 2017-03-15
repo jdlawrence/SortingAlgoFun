@@ -1,9 +1,16 @@
+// libraries
 var assert = require('assert');
 var expect = require('chai').expect;
+
+// sorting Algorithms
 var bubbleSort = require('../src/bubbleSort');
 var mergeSort = require('../src/mergeSort');
+var quickSort = require('../src/quickSort');
+
+// helper functions
 var swap = require('../src/helpers').swap;
 var merge = require('../src/helpers').merge;
+var partition = require('../src/helpers').partition;
 
 describe('BubbleSort', function () {
   describe('The swap helper function', () => {
@@ -45,4 +52,23 @@ describe('MergeSort', function () {
       expect(sorted).to.eql([-6, 1, 3, 5, 7]);
     });
   })
-})
+});
+
+describe('QuickSort', function () {
+  describe('The partition helper function', function () {
+    it('Using the first value as the pivot, puts items less than or equal to pivot on the left and greater than on the right', () => {
+      var arr = [7, 0, 1]
+      var partitionIndex = partition(arr, 0, 2);
+      expect(partitionIndex).to.eql(2);
+    })
+    
+  })
+  describe('The quickSort function itself', () => {
+    it('Sorts an array in ascending order', () => {
+      var sorted = quickSort([5, 3, 1, -6, 7]);
+      expect(sorted).to.eql([-6, 1, 3, 5, 7]);
+    });
+  })
+});
+
+
