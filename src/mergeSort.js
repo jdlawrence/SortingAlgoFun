@@ -11,12 +11,14 @@ function mergeSort(arr, lo, hi) {
   if (lo >= hi) {
     return arr.slice(lo, lo + 1);
   }
+
   // Find the midpoint index
   var mid = Math.floor((lo + hi) / 2);
 
   // Call merge on the left and right halves
   var left = mergeSort(arr, lo, mid);
   var right = mergeSort(arr, mid + 1, hi);
+
   // Merge the sorted halves back together
   result = merge(left, right);
   return result;
