@@ -1,4 +1,5 @@
-var swap = require('./helpers').swap;
+var swap = require('./helpers.js').swap;
+// var swap = require('./helpers.solution.js').swap;
 
 function bubbleSort(arr) {
   // Make a copy of the original array

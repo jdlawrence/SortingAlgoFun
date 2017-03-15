@@ -1,4 +1,5 @@
-var merge = require('./helpers').merge;
+var merge = require('./helpers.js').merge;
+// var merge = require('./helpers.solution.js').merge;
 
 function mergeSort(arr, lo, hi) {
   var result = arr.slice(arr);
