@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceRoot}/src/helpers.js"
+      "program": "${workspaceRoot}/src/helpers.solution.js"
     },
     {
       "type": "node",
