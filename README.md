@@ -16,7 +16,7 @@ Observe that many tests are currently failing. Work though helper functions foun
 BubbleSort, mergeSort, and quickSort are the three sort most likely to be appear in interview questions. Behind the scenes, Javascript's V8 engine uses a version of quickSort to implement its native array sort method. Strong familiarity with at least these algorithms, and potentially insertionSort, will provide a solid foundation in sorting.
 
 # Facts:
-- The best time known time complexity for ANY sorting algorithm is O(n * log (n)) ON AVERAGE, aka linearithmic
+- The best time known time complexity for ANY sorting algorithm is O(n * log (n)), aka linearithmic, ON AVERAGE.
 
 ### BubbleSort: 
 Starting on the left, compare adjacent items and keep “bubbling” (swapping) the larger one to the right. Eventually the largest element will be at the end of the array in its final place. Bubble sort the remaining N - 1 items.
