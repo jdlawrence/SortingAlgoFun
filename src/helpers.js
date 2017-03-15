@@ -39,7 +39,7 @@ function merge(left, right) {
 */
 function partition(arr, left, right) {
   // FIX ME
-  return 100;
+  return Math.floor((left + right) / 2);
 }
 
 module.exports = {
