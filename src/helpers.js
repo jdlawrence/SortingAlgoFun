@@ -31,14 +31,13 @@ function merge(left, right) {
 function partition(arr, left, right) {
   var pivotIndex = left;
   var pivotVal = arr[left];
-
   while (left < right) {
     // Move right until you find a value greater than the pivot
     while (arr[left] <= pivotVal && left < arr.length - 1) {
       left++;
     }
 
-    if (left >= right) {
+    if (left > right) {
       break;
     }
     // Move left until you find a value less than or equal to the pivot
@@ -60,9 +59,9 @@ function partition(arr, left, right) {
 }
 
 var dummy = [4, 7, 6, 5, 1, 2, 3];
-var dummy2 = [7];
+var dummy2 = [1, 2];
 
-console.log(partition(dummy, 0, 0));
+console.log(partition(dummy2, 0, 1));
 module.exports = {
   merge: merge,
   partition: partition,
