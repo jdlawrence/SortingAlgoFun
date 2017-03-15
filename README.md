@@ -22,7 +22,7 @@ BubbleSort, mergeSort, and quickSort are the three sort most likely to be appear
 Starting on the left, compare adjacent items and keep “bubbling” (swapping) the larger one to the right. Eventually the largest element will be at the end of the array in its final place. Bubble sort the remaining N - 1 items.
 
 - Best Case: O(n)
-- Average Case: O(n)
+- Average Case: O(n^2)
 - Advantages: Easy to implement
 
 ### MergeSort:
