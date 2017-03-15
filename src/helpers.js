@@ -29,36 +29,40 @@ function merge(left, right) {
 }
 
 function partition(arr, left, right) {
-  var result = arr.slice();
-  var pivotIndex = 0;
-  var pivotVal = result[left];
-  left = left === undefined ? 1 : left;
-  right = right === undefined ? arr.length - 1 : right;
+  var pivotIndex = left;
+  var pivotVal = arr[left];
 
   while (left < right) {
     // Move right until you find a value greater than the pivot
-    while (result[left] <= pivotVal) {
+    while (arr[left] <= pivotVal && left < arr.length - 1) {
       left++;
     }
 
+    if (left >= right) {
+      break;
+    }
     // Move left until you find a value less than or equal to the pivot
-    while (result[right] > pivotVal) {
+    while (arr[right] > pivotVal && right >= 0) {
       right--;
     }
 
     if (left < right) {
-      swap(result, left++, right--);
+      swap(arr, left, right);
+      left++; 
+      right--;
     } else {
       break;
     }
   }
-  swap(result, right, pivotIndex);
-  return result;
+  swap(arr, right, pivotIndex);
+
+  return right;
 }
 
-var dummy = [4, 7, 6, 1, 2];
+var dummy = [4, 7, 6, 5, 1, 2, 3];
+var dummy2 = [7];
 
-console.log(partition(dummy));
+console.log(partition(dummy, 0, 0));
 module.exports = {
   merge: merge,
   partition: partition,
