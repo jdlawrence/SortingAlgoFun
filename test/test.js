@@ -57,9 +57,9 @@ describe('MergeSort', function () {
 describe('QuickSort', function () {
   describe('The partition helper function', function () {
     it('Using the first value as the pivot, puts items less than or equal to pivot on the left and greater than on the right', () => {
-      var arr = [7, 0, 1]
-      var partitionIndex = partition(arr, 0, 2);
-      expect(partitionIndex).to.eql(2);
+      var arr = [4, 1, 2, 3, 5, 6, 7];
+      var partitionIndex = partition(arr, 0, 6);
+      expect(partitionIndex).to.eql(3);
     })
     
   })
@@ -68,6 +68,10 @@ describe('QuickSort', function () {
       var sorted = quickSort([5, 3, 1, -6, 7]);
       expect(sorted).to.eql([-6, 1, 3, 5, 7]);
     });
+    it('Given an empty array, returns an empty array', function() {
+      var sorted = quickSort([]);
+      expect(sorted).to.eql([]);
+    })
   })
 });
 
