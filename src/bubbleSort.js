@@ -1,4 +1,3 @@
-/***************** FIXXXXXX ***************/
 var swap = require('./helpers').swap;
 
 function bubbleSort(arr) {
