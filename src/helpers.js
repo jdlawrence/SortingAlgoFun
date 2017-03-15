@@ -5,10 +5,11 @@
    second: the second index to be swapped
   Output: an array with value and 'first' and 'second' indices swapped
   Example:
-    swap([1, 2, 3, 4, 5], 0, 4) should return [5, 2, 3, 4, 0] 
+    swap([1, 2, 3, 4, 5], 0, 4) should return [5, 2, 3, 4, 1] 
 */
 function swap(arr, first, second) {
   // FIX ME
+
   return arr;
 }
 
