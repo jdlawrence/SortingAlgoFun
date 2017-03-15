@@ -29,7 +29,7 @@ Starting on the left, compare adjacent items and keep “bubbling” (swapping) 
 Recursively divide the array into subarrays of length 1. Merge them all back together. 
 - Best Case: O(n * log (n))
 - Average Case: O(n * log (n))
-- Advantages: Worse case is O(n * log(n)), which is better than the QuickSort worst case
+- Advantages: Worst case is O(n * log(n)), which is better than the QuickSort worst case
 
 ### QuickSort:
 Select a pivot element and organize the array such that all elements left of it are less than or equal to it, and all elements right of it are greater than it. Recurse on the elements to two halves outside of the pivot.
