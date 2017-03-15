@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceRoot}/src/quickSort.js"
+      "program": "${workspaceRoot}/src/helpers.js"
     },
     {
       "type": "node",

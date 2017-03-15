@@ -47,8 +47,6 @@ function partition(arr, left, right) {
 
     if (left < right) {
       swap(arr, left, right);
-      left++; 
-      right--;
     } else {
       break;
     }
