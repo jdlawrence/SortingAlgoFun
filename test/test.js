@@ -8,9 +8,11 @@ var mergeSort = require('../src/mergeSort');
 var quickSort = require('../src/quickSort');
 
 // helper functions
-var swap = require('../src/helpers').swap;
-var merge = require('../src/helpers').merge;
-var partition = require('../src/helpers').partition;
+var helpers = require('../src/helpers.js');
+// var helpers = require('../src/helpers.solution.js');
+var swap = helpers.swap;
+var merge = helpers.merge;
+var partition = helpers.partition;
 
 describe('BubbleSort', function () {
   describe('The swap helper function', () => {
@@ -60,15 +62,25 @@ describe('QuickSort', function () {
       var arr = [4, 1, 2, 3, 5, 6, 7];
       var partitionIndex = partition(arr, 0, 6);
       expect(partitionIndex).to.eql(3);
+    });
+    it('Test for an array sorted in descending order', () => {
+      var arr = [9, 8, 7, 6, 5];
+      var partitionIndex = partition(arr, 0, 4);
+      expect(partitionIndex).to.eql(4);
+    });
+    it('Test for an array sorted in ascending order', () => {
+      var arr = [5, 6, 7, 8, 9];
+      var partitionIndex = partition(arr, 0, 4);
+      expect(partitionIndex).to.eql(0);
     })
-    
+
   })
   describe('The quickSort function itself', () => {
     it('Sorts an array in ascending order', () => {
       var sorted = quickSort([5, 3, 1, -6, 7]);
       expect(sorted).to.eql([-6, 1, 3, 5, 7]);
     });
-    it('Given an empty array, returns an empty array', function() {
+    it('Given an empty array, returns an empty array', function () {
       var sorted = quickSort([]);
       expect(sorted).to.eql([]);
     })
